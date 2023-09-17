@@ -11,8 +11,8 @@ int main(void)
 	int len2;
 	unsigned int ui;
 
-	len = _printf("%s%%abc%c", "x", 'x');
-	len2 = printf("adad");
+	len = _printf("%   c", 'a');
+	len2 = printf("%c", 'a');
 	ui = (unsigned int) INT_MAX + 1024;
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
