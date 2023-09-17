@@ -30,7 +30,10 @@ int _printf(const char *format, ...)
 			temp = 0;
 			i++;
 			ch = format[i];
-			if (!ch)
+			if (!(ch == '%' || ch == 'c' || ch == 's' || ch == 'd' ||
+			      ch == 'i' || ch == 'b' || ch == 'u' || ch == 'o' ||
+			      ch == 'x' || ch == 'X' || ch == 'p' || ch == 'S' ||
+			      ch == 'r' || ch == 'R'))
 				return (-1);
 			 temp += printer(ch, arg);
 			if (temp < 0)
