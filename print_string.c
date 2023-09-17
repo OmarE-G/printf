@@ -12,18 +12,12 @@ int print_string(va_list val)
 
 	s = va_arg(val, char *);
 	if (s == NULL)
-	{
 		s = "(null)";
-		len = _strlen(s);
-		for (i = 0; i < len; i++)
-			_putchar(s[i]);
-		return (len);
-	}
 
-		len = _strlen(s);
-		for (i = 0; i < len; i++)
-			_putchar(s[i]);
+	len = _strlen(s);
+	for (i = 0; i < len; i++)
+		_putchar(s[i]);
 
 
-		return (len);
+	return (len);
 }

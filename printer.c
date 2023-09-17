@@ -17,11 +17,7 @@ int printer(char ch, va_list arg)
 		num += print_string(arg);
 	}
 	else if (ch == 'c')
-	{
-		if (sizeof(ch) != 1)
-			return (-1);
 		num += print_char(arg);
-	}
 	else if (ch == '%')
 		num += print_37();
 	else if (ch == 'u')
