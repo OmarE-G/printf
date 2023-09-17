@@ -25,7 +25,7 @@ int printer(char ch, va_list arg)
 	else if (ch == 'o')
 		num = print_oct(arg);
 	else 
-	      num = p_unknown(ch);
+	        num = p_unknown(ch);
 
 	return (num);
 }
