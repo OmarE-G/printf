@@ -34,6 +34,8 @@ int _printf(const char *format, ...)
 		}
 
 	}
+	if (num == 0)
+		exit(98);
 
 	va_end(arg);
 	return (num);

@@ -11,8 +11,8 @@ int main(void)
 	int len2;
 	unsigned int ui;
 
-	len = _printf("Let's try\n");
-	len2 = printf("Let's try\n");
+	len = _printf("");
+	len2 = printf("sf");
 	ui = (unsigned int) INT_MAX + 1024;
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
