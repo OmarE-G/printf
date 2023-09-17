@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 			      ch == 'x' || ch == 'X' || ch == 'p' || ch == 'S' ||
 			      ch == 'r' || ch == 'R'))
 				return (-1);
-			 temp += printer(ch, arg);
+			 temp = printer(ch, arg);
 			if (temp < 0)
 				return (-1);
 			 num += temp;
