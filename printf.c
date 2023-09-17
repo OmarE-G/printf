@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list arg;
-	int i, num = 0;
+	int i, num = 0, temp = 0;
 	char ch;
 
 	if (format == NULL)
@@ -27,9 +27,13 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			temp = 0;
 			i++;
 			 ch = format[i];
-			 num += printer(ch, arg);
+			 temp += printer(ch, arg);
+			if (temp == 0)
+				return (-1);
+			 num += temp;
 
 		}
 
