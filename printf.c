@@ -37,7 +37,9 @@ int _printf(const char *format, ...)
 		}
 
 	}
-
+    if (num < 0)
+		return (-1);
+		
 	va_end(arg);
 	return (num);
 }

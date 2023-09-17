@@ -13,9 +13,7 @@ int printer(char ch, va_list arg)
 	if ((ch == 'i' || ch == 'd'))
 		num = print_int(arg);
 	else if (ch == 's')
-	{
 		num = print_string(arg);
-	}
 	else if (ch == 'c')
 		num = print_char(arg);
 	else if (ch == '%')
