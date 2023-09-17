@@ -12,7 +12,7 @@ int print_string(va_list val)
 
 	s = va_arg(val, char *);
 	if (s == NULL)
-		return (-1);
+		s = "(null)";
 
 	len = _strlen(s);
 	for (i = 0; i < len; i++)
