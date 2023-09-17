@@ -15,7 +15,7 @@ int print_int(va_list arg);
 int _strlen(char *s);
 int _putchar(char c);
 int print_37(void);
-int get_size(unsigned int n ,int base );
+int get_size(unsigned int n, int base);
 int print_binary(va_list arg);
 int print_unsigned_integer(va_list arg);
 int print_oct(va_list arg);

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printf_string - print a string.
+ * print_string - print a string.
  * @val: argumen t.
  * Return: the length of the string.
  */
@@ -19,11 +19,11 @@ int print_string(va_list val)
 			_putchar(s[i]);
 		return (len);
 	}
-	
+
 		len = _strlen(s);
 		for (i = 0; i < len; i++)
 			_putchar(s[i]);
 
 
-		return (len);	
+		return (len);
 }

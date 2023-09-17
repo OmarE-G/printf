@@ -18,7 +18,7 @@ int print_binary(va_list arg)
 		return (1);
 	}
 
-	cntr = get_size(num,2);
+	cntr = get_size(num, 2);
 	binary = malloc(sizeof(char) * (cntr + 1));
 
 	if (binary == NULL)

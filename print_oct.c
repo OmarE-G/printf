@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_octal - prints octal numbers
+ * print_oct - prints octal numbers
  * @arg: the argument of the integer function.
- * @flag: flag 1 or 2 or 3 or 4 or 5.
  * Return: A total count of the characters printed.
  */
 
@@ -11,7 +10,7 @@ int print_oct(va_list arg)
 {
 	int cntr = 0, i;
 	int *oct;
-	unsigned int num = va_arg(arg, unsigned int),tmp =num;
+	unsigned int num = va_arg(arg, unsigned int), tmp = num;
 
 	if (num == 0)
 	{
@@ -19,7 +18,7 @@ int print_oct(va_list arg)
 		return (1);
 	}
 	cntr = get_size(num, 8);
-	oct = malloc(1+cntr * sizeof(int));
+	oct = malloc(1 + cntr * sizeof(int));
 	if (oct == NULL)
 		return (-1);
 	if (oct)
