@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 			      ch == 'r' || ch == 'R'))
 				return (-1);
 			 temp += printer(ch, arg);
-			if (temp < 0)
+			if (temp <= 0)
 				return (-1);
 			 num += temp;
 
