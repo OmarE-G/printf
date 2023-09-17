@@ -29,7 +29,9 @@ int _printf(const char *format, ...)
 		{
 			temp = 0;
 			i++;
-			 ch = format[i];
+			ch = format[i];
+			if (!ch)
+				return (-1);
 			 temp += printer(ch, arg);
 			if (temp < 0)
 				return (-1);
