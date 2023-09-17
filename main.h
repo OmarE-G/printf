@@ -20,6 +20,6 @@ int print_binary(va_list arg);
 int print_unsigned_integer(va_list arg);
 int print_oct(va_list arg);
 int printer(char ch, va_list arg);
-
+int p_unknown(char ch);
 
 #endif

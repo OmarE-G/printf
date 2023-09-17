@@ -26,6 +26,8 @@ int printer(char ch, va_list arg)
 		num += print_binary(arg);
 	else if (ch == 'o')
 		num += print_oct(arg);
+	else 
+	    num+=p_unknown(arg);
 
 	return (num);
 }
