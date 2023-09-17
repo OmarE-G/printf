@@ -27,15 +27,9 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			temp = 0;
 			i++;
 			ch = format[i];
-			if (!(ch == '%' || ch == 'c' || ch == 's' || ch == 'd' ||
-			      ch == 'i' || ch == 'b' || ch == 'u' || ch == 'o' ||
-			      ch == 'x' || ch == 'X' || ch == 'p' || ch == 'S' ||
-			      ch == 'r' || ch == 'R'))
-				return (-1);
-			 temp += printer(ch, arg);
+			 temp = printer(ch, arg);
 			if (temp < 0)
 				return (-1);
 			 num += temp;
@@ -43,8 +37,6 @@ int _printf(const char *format, ...)
 		}
 
 	}
-	if (num < 0)
-		return (-1);
 
 	va_end(arg);
 	return (num);
