@@ -90,7 +90,7 @@ int print_oct(va_list arg)
 		_putchar('0');
 		return (1);
 	}
-	cntr = (int) ceil(log10(num) / log10(8));
+	cntr = get_size(num, 8);
 	oct = malloc(cntr * sizeof(int));
 	if (oct == NULL)
 		return (-1);
