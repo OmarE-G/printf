@@ -28,7 +28,7 @@ int _strlen(char *s)
  * Return: size of number
  */
 
-int get_size(unsigned int n, int base)
+int get_size(unsigned long int n, unsigned long base)
 {
 	int size = 0;
 

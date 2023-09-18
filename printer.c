@@ -17,13 +17,15 @@ int printer(char ch, va_list arg)
 	else if (ch == 'c')
 		num = print_char(arg);
 	else if (ch == '%')
-		num = print_37();
+		num = _putchar('%');
 	else if (ch == 'u')
 		num = print_unsigned_integer(arg);
 	else if (ch == 'b')
 		num = print_binary(arg);
 	else if (ch == 'o')
 		num = print_oct(arg);
+	else if (ch == 'x' || ch == 'X' || ch == 'p')
+		num = print_hexa(arg, ch);
 	else
 		num = p_unknown(ch);
 

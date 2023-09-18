@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			ch = format[i];
-			 temp = printer(ch, arg);
+			temp = printer(ch, arg);
 			if (temp < 0)
 				return (-1);
 			 num += temp;
