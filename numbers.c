@@ -166,10 +166,14 @@ int print_hexa(va_list arg, char c)
 
 	if (num == 0)
 	{
+		if (c == 'p')
+		{
+			_printf("(nil)");
+			return (5);
+		}
 		_putchar('0');
 		return (1);
 	}
-
 	if (c == 'p')
 		_putchar('0'), _putchar('x');
 
